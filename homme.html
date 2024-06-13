@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="homme.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="Responsive Card Slider/css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Responsive Card Slider/css/slider.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo1">TourMaroc</div>
+        <div class="navbar">
+            <ul id="navbar">
+                <li onclick="scrollToSection('homme')">Homme</li>
+                <li onclick="scrollToSection('hr')">Tour with private guide</li>
+                <li onclick="scrollToSection('footer')">Contact</li>
+                <li onclick="window.location.href = 'gallery/galleryPage.php'">Gallery</li>
+            </ul>
+        </div>
+        <div class="profile">
+            <ul class="login" id="logmenu">
+                <li><a id="signup" href="signup and login/signup.html">sign up</a></li>
+                <li><a id="login" href="signup and login/login.html">Log in</a></li>
+                <li><a id="logout" href="">Log out</a></li>
+            </ul>
+            <i class="fa-solid fa-chevron-down" id="fa-chevron-down"></i>
+            <div id="username"></div>
+            <i id="burger-menu" class="fa-solid fa-bars"></i>
+        </div>
+
+    </header>
+    <section class="section1" id="homme">
+        <div class="cuote">
+            <p class="p1">Travel far</p>
+            <p class="p1">Travel wide</p>
+            <p class="p1">Travel deep</p>
+        </div>
+    </section>
+    <hr id="hr">
+    <section class="section2">
+        <div class="para">
+            <p class="p2">Tours with the private guide</p>
+        </div>
+<!-- 
+        <div class="search">
+            <div class="searchbar"><input type="text" placeholder="Search tours"></div>
+            <div class="searchbtn"><button>Search tour</button></div>
+        </div> -->
+    </section>
+    <section class="section3">
+        <div class="cards" id="cards">
+            <div class="card">
+                <div class="img">
+                </div>
+                <div class="local">
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor</p>
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="price">
+                    <p>Lorem <span>ipsum</span> dolor</p>
+                </div>
+                <div class="cardbtn">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                </div>
+                <div class="local">
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor</p>
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="price">
+                    <p>Lorem <span>ipsum</span> dolor</p>
+                </div>
+                <div class="cardbtn">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                </div>
+                <div class="local">
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor</p>
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="price">
+                    <p>Lorem <span>ipsum</span> dolor</p>
+                </div>
+                <div class="cardbtn">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                </div>
+                <div class="local">
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor</p>
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="price">
+                    <p>Lorem <span>ipsum</span> dolor</p>
+                </div>
+                <div class="cardbtn">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                </div>
+                <div class="local">
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor</p>
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="price">
+                    <p>Lorem <span>ipsum</span> dolor</p>
+                </div>
+                <div class="cardbtn">
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                </div>
+                <div class="local">
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor</p>
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="price">
+                    <p>Lorem <span>ipsum</span> dolor</p>
+                </div>
+                <div class="cardbtn">
+                    <button>Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="para">
+        <p class="p2">Take a look at some of our
+            Most Popular Tours</p>
+    </div>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper" id="cards-slider-asass">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name"><i class="fa-solid fa-location-dot"></i>David Dell</h2>
+                        <p class="description">The lorem text the section</p>
+                        <div class="price">
+                            <p>Lorem <span>ipsum</span> dolor</p>
+                        </div>
+                        <button class="button">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <footer id="footer">
+        <div class="Contact">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="flexing">
+            <div class="div1">
+                <div class="logo2">TourMaroc</div><br>
+                <div class="phonenymber"><i class="fa-solid fa-phone icon"></i>0645445028</div><br>
+                <div class="email"><i class="fa-solid fa-envelope icon"></i>TourMaroc@gmail.com</div><br>
+            </div>
+            <div class="aboutus">
+                <p>ABOUT US</p><br>
+                <ul>
+                    <li onclick="scrollToSection('homme')">Homme</li><br>
+                    <li onclick="scrollToSection('hr')">Tour with private guide</li><br>
+                    <li><a href="gallery/galleryPage.php#container">Gallery</a></li><br>
+                </ul>
+            </div>
+            <div class="footerdesc">
+                <p>Experience the magic of Morocco with our customized tours. Explore vibrant
+                    cities, stunning landscapes, and rich culture. Your adventure awaits!</p>
+            </div>
+        </div>
+
+        <hr style="margin-bottom: 1vw;width: 90vw;">
+        <div class="socialmedias">
+            <div class="copypara"><i class='bx bx-copyright'></i>Copyright TourMaroc 2024</div>
+            <div class="socialmedia">
+                <div><a href="#"><i class='bx bxl-facebook-square icon'></i></a></div>
+                <div><a href="#"><i class='bx bxl-instagram-alt icon'></i></a></div>
+                <div><a href="#"><i class='bx bxl-linkedin-square icon'></i></a></div>
+                <div><a href="#"><i class='bx bxl-youtube icon'></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <!-- Swiper JS -->
+    <script src="Responsive Card Slider/js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="Responsive Card Slider/js/slider.js"></script>
+</body>
+
+</html>

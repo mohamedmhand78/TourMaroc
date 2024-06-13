@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Sign Up</h1>
+            <div class="input-box">
+                <input class="inputs" id="fullname" type="text" placeholder="Full Name..." required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <p class="error" id="namerr"></p>
+            <div class="input-box">
+                <input class="inputs" id="email" type="text" placeholder="Email Address..." required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <p class="error" id="emailerr"></p>
+            <div class="input-box">
+                <input class="inputs" id="username" type="text" placeholder="Username..." required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <p class="error" id="usererr"></p>
+            <div class="input-box">
+                <input class="inputs" id="password" type="password" placeholder="Password..." required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <p class="error" id="passerr"></p>
+            <div class="input-box">
+                <input class="inputs" id="cpassword" type="password" placeholder="Confirm Password..." required>
+            </div>
+            <p class="error" id="cpasserr"></p>
+            <p class="error" id="reserr"></p>
+            <button id="submit" type="submit" class="btn">Sign Up</button>
+            <div class="login">
+                <a href="login.html">Log In <i class='bx bxs-hand-right'></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
